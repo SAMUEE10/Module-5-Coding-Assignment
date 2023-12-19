@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurante de Samuel Sierra</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!-- Comentario: Esta página fue creada por Samuel Sierra en el año 2023 -->
+
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left visible-md visible-lg">
+                        <div id="logo-img" alt="Imagen del logo"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>SAMUEL CHINESE</h1></a>
+                        <p>
+                            <img src="images/star-k-logo.png" alt="Certificación Kosher">
+                            <span>Certificado SIERRA</span>
+                        </p>
+                    </div>
+
+                    <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Alternar navegación</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                        <li id="navHomeButton" class="visible-xs active">
+                            <a href="index.html">
+                                <span class="glyphicon glyphicon-home"></span> Inicio</a>
+                        </li>
+                        <li id="navMenuButton">
+                            <a href="#" onclick="$dc.loadMenuCategories();">
+                                <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menú</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Premios</a>
+                        </li>
+                        <li id="phone" class="hidden-xs">
+                            <a href="tel:678-888-999">
+                                <span>678-888-999</span></a><div>* Entregas a domicilio</div>
+                        </li>
+                    </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->
+            </div><!-- .container -->
+        </nav><!-- #header-nav -->
+    </header>
+
+    <div id="call-btn" class="visible-xs">
+        <a class="btn" href="tel:678-888-999">
+        <span class="glyphicon glyphicon-earphone"></span>
+        678-888-999
+        </a>
+    </div>
+    <div id="xs-deliver" class="text-center visible-xs">* Entregas a domicilio</div>
+
+    <div id="main-content" class="container"></div>
+
+    <footer class="panel-footer">
+        <div class="container">
+            <div class="row">
+                <section id="hours" class="col-sm-4">
+                    <span>Horario:</span><br>
+                    Dom-Jue: 10:15 am - 10:00 pm<br>
+                    Vie: 10:15 am - 2:30 pm<br>
+                    Sábado Cerrado
+                    <hr class="visible-xs">
+                </section>
+                <section id="address" class="col-sm-4">
+                    <span>Dirección:</span><br>
+                    7105 Reisterstown Road<br>
+                    Baltimore, MD 21215
+                    <p>* Área de entrega dentro de 3-4 millas, con pedido mínimo de $20 más un cargo de $3 para todas las entregas.</p>
+                    <hr class="visible-xs">
+                </section>
+                <section id="testimonials" class="col-sm-4">
+                    <p>"¡El mejor restaurante chino en el que he estado! ¡Y eso dice mucho, ya que he estado en muchos!"</p>
+                    <p>"¡Comida increíble! ¡Excelente servicio! ¡No podría pedir más! Volveré una y otra vez!"</p>
+                </section>
+            </div>
+            <div class="text-center">&copy; Derechos de autor SAMUEL CHINESE 2023</div>
+        </div>
+    </footer>
+
+    <!-- jQuery (Los complementos de Bootstrap JS dependen de esto) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/ajax-utils.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
